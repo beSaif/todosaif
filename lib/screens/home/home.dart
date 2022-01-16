@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
         //     blurRadius: 0.0,
         //   ),
         // ],
-        borderRadius: const BorderRadius.all(Radius.circular(16)),
+        borderRadius: BorderRadius.all(Radius.circular(16)),
       ),
       drawer: drawer(_advancedDrawerController),
       child: Scaffold(
@@ -43,6 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
           appBar: appBar(_advancedDrawerController, _handleMenuButtonPressed),
           body: const Body(),
           floatingActionButton: FloatingActionButton(
+            heroTag: 'bottomRightAddTaskButton',
             onPressed: () {
               // Add your onPressed code here!
               Navigator.push(

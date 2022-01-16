@@ -62,4 +62,7 @@ flutter:
          - asset: font/Halenoir-UltraLight.otf
          - asset: font/HalenoirText-Regular.otf
            style: italic
+  
+  assets:
+    - assets/images/dp.jpg
    

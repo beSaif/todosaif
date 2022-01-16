@@ -5,6 +5,7 @@ Widget closeButton(context) {
   return Container(
     alignment: Alignment.topRight,
     child: FloatingActionButton(
+      heroTag: 'topRightCloseButton',
       onPressed: () {
         // Add your onPressed code here!
         Navigator.pop(context);

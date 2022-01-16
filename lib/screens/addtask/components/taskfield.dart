@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 import 'package:todosaif/components/theme.dart';
 import 'package:todosaif/utils/sizedbox.dart';
@@ -39,13 +41,13 @@ class _taskFieldState extends State<taskField> {
         Row(
           children: [
             FloatingActionButton.extended(
+              heroTag: 'timeSetterButton',
               backgroundColor: colorBackground,
               elevation: 0,
               foregroundColor: colorPrimary,
               shape: const StadiumBorder(
                   side: BorderSide(color: colorAccent, width: 2.5)),
               onPressed: () {
-                print("Button Pressed");
                 setState(() {
                   if (dayIcon == 3) {
                     dayIcon = 1;
@@ -86,6 +88,7 @@ class _taskFieldState extends State<taskField> {
               width: 50,
               child: FittedBox(
                 child: FloatingActionButton(
+                  heroTag: 'prioritySetterButton',
                   onPressed: () {
                     // Add your onPressed code here!
                     setState(() {

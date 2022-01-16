@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:todosaif/components/theme.dart';
-import 'package:todosaif/screens/home/home.dart';
 import 'package:flutter_advanced_drawer/flutter_advanced_drawer.dart';
 
 AppBar appBar(_advancedDrawerController, _handleMenuButtonPressed) {
@@ -11,7 +10,7 @@ AppBar appBar(_advancedDrawerController, _handleMenuButtonPressed) {
         valueListenable: _advancedDrawerController,
         builder: (_, value, __) {
           return AnimatedSwitcher(
-            duration: Duration(milliseconds: 250),
+            duration: const Duration(milliseconds: 250),
             child: Icon(
               value.visible ? Icons.clear : Icons.menu,
               key: ValueKey<bool>(value.visible),
