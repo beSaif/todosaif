@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:todosaif/components/theme.dart';
 import 'package:todosaif/screens/home/home.dart';
 
-void main() {
+Future<void> main() async {
   runApp(const MyApp());
 }
 

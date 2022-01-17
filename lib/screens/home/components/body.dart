@@ -83,12 +83,9 @@ class Body extends StatelessWidget {
                 verticalBox(15),
                 // ignore: sized_box_for_whitespace
                 Expanded(
-                  child: ListView.separated(
+                  child: ListView.builder(
                       itemBuilder: (BuildContext context, int index) {
                         return taskCards();
-                      },
-                      separatorBuilder: (BuildContext context, int index) {
-                        return verticalBox(0);
                       },
                       itemCount: 6),
                 )
