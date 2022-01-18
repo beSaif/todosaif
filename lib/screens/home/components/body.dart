@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:todosaif/components/theme.dart';
+import 'package:todosaif/models/tasks.dart';
 import 'package:todosaif/screens/home/components/cards.dart';
 import 'package:todosaif/screens/home/components/taskcard.dart';
 import 'package:todosaif/utils/sizedbox.dart';
 
-class Body extends StatelessWidget {
-  const Body({Key? key}) : super(key: key);
+class Body extends StatefulWidget {
+  final List<Task> tasks;
+  const Body({Key? key, required this.tasks}) : super(key: key);
 
+  @override
+  State<Body> createState() => _BodyState();
+}
+
+class _BodyState extends State<Body> {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -84,10 +91,14 @@ class Body extends StatelessWidget {
                 // ignore: sized_box_for_whitespace
                 Expanded(
                   child: ListView.builder(
+                      itemCount: widget.tasks.length,
                       itemBuilder: (BuildContext context, int index) {
-                        return taskCards();
-                      },
-                      itemCount: 6),
+                        if (widget.tasks.isEmpty) {
+                          return const Text("data");
+                        } else {
+                          return taskCards();
+                        }
+                      }),
                 )
               ],
             ),

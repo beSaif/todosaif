@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todosaif/components/theme.dart';
+import 'package:todosaif/db/tasks_database.dart';
+import 'package:todosaif/models/tasks.dart';
 import 'package:todosaif/screens/addtask/addtask.dart';
 import 'package:todosaif/screens/home/components/appbar.dart';
 import 'package:todosaif/screens/home/components/body.dart';
@@ -14,6 +16,32 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  late List<Task> tasks;
+
+  bool isLoading = false;
+
+  @override
+  void initState() {
+    super.initState();
+
+    refreshTasks();
+  }
+
+  @override
+  void dispose() {
+    TasksDatabase.instance.close();
+
+    super.dispose();
+  }
+
+  Future refreshTasks() async {
+    setState(() => isLoading = true);
+
+    tasks = await TasksDatabase.instance.readAllTasks();
+
+    setState(() => isLoading = false);
+  }
+
   final _advancedDrawerController = AdvancedDrawerController();
 
   @override
@@ -41,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Scaffold(
           //backgroundColor: const Color.fromRGBO(248, 250, 254, 1),
           appBar: appBar(_advancedDrawerController, _handleMenuButtonPressed),
-          body: const Body(),
+          body: Body(tasks: tasks),
           floatingActionButton: FloatingActionButton(
             heroTag: 'bottomRightAddTaskButton',
             onPressed: () {

@@ -3,6 +3,7 @@ import 'package:todosaif/components/theme.dart';
 import 'package:todosaif/screens/home/home.dart';
 
 Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
