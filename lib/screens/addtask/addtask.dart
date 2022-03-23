@@ -28,7 +28,8 @@ class _AddTaskState extends State<AddTask> {
       "name": name,
       "priority": priority,
       "timing": timing,
-      "status": true
+      "status": true,
+      "createdOn": FieldValue.serverTimestamp()
     };
 
     CollectionReference collectionReference =

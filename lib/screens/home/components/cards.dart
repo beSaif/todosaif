@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:todosaif/components/theme.dart';
 import 'package:todosaif/utils/sizedbox.dart';
 
-Widget cards() {
+Widget cards(int total, String priorityTime) {
   return SizedBox(
     height: 160,
     width: 200,
@@ -19,16 +19,16 @@ Widget cards() {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                  "40 tasks",
+                Text(
+                  "$total tasks",
                   style: TextStyle(
                       fontFamily: 'Halenoir',
                       color: colorAccent,
                       fontSize: 12,
                       fontWeight: FontWeight.w500),
                 ),
-                const Text(
-                  "Business",
+                Text(
+                  priorityTime,
                   style: TextStyle(
                       fontFamily: 'Halenoir',
                       color: colorPrimary,

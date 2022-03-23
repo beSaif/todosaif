@@ -17,17 +17,21 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  List? tasksFetch;
   List<Task>? tasks;
 
   bool isLoading = false;
-
   @override
   void initState() {
     super.initState();
+
+    //initialize firebase
     Firebase.initializeApp().whenComplete(() {
       print("Firebase Initialization Completed");
       setState(() {});
     });
+
+    //fetches data
   }
 
   @override

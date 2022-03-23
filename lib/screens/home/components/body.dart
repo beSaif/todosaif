@@ -17,22 +17,16 @@ class Body extends StatefulWidget {
 }
 
 class _BodyState extends State<Body> {
-  List? tasks;
+  late List tasks;
 
   CollectionReference _collectionRef =
       FirebaseFirestore.instance.collection('tasks');
 
-  Future<void> getData() async {
-    // Get docs from collection reference
-    QuerySnapshot querySnapshot = await _collectionRef.get();
-
-    // Get data from docs and convert map to List
-    final allData = querySnapshot.docs.map((doc) => doc.data()).toList();
-    tasks = allData;
-    print(tasks);
+  @override
+  void initState() {
+    super.initState();
   }
 
-  @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(
@@ -40,10 +34,6 @@ class _BodyState extends State<Body> {
       ),
       child: Column(
         children: [
-          FloatingActionButton(onPressed: () {
-            print('Button Pressed');
-            getData();
-          }),
           //First Part
           verticalBox(30),
           const SizedBox(
@@ -81,11 +71,9 @@ class _BodyState extends State<Body> {
                     // This next line does the trick.
                     scrollDirection: Axis.horizontal,
                     children: <Widget>[
-                      cards(),
-                      cards(),
-                      cards(),
-                      cards(),
-                      cards(),
+                      cards(3, "Red"),
+                      cards(2, "Yellow"),
+                      cards(6, "Green"),
                     ],
                   ),
                 )
@@ -108,25 +96,26 @@ class _BodyState extends State<Body> {
                           fontWeight: FontWeight.w500)),
                   alignment: Alignment.topLeft,
                 ),
-
                 verticalBox(15),
-                // ignore: sized_box_for_whitespace
-/*                 Expanded(
-                  child: ListView.builder(
-                      itemCount: widget.tasks.length,
-                      itemBuilder: (BuildContext context, int index) {
-                        if (widget.tasks.isEmpty) {
-                          return const Text("data");
-                        } else {
-                          return taskCards();
-                        }
-                      }),
-                ) */
                 Expanded(
-                  child: ListView.builder(
-                      itemCount: tasks?.length,
-                      itemBuilder: (BuildContext context, int index) {
-                        return taskCards("tasks[index]['name']", Colors.red);
+                  child: StreamBuilder<QuerySnapshot>(
+                      stream: FirebaseFirestore.instance
+                          .collection('tasks')
+                          .orderBy('createdOn', descending: true)
+                          .snapshots(),
+                      builder: (BuildContext context,
+                          AsyncSnapshot<QuerySnapshot> snapshot) {
+                        if (!snapshot.hasData) {
+                          return const Center(
+                            child: CircularProgressIndicator(),
+                          );
+                        }
+                        return ListView(
+                          children: snapshot.data!.docs.map((document) {
+                            return taskCards(
+                                document['name'], document['priority']);
+                          }).toList(),
+                        );
                       }),
                 )
               ],
