@@ -1,6 +1,7 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:todosaif/components/theme.dart';
-import 'package:todosaif/db/tasks_database.dart';
 import 'package:todosaif/models/tasks.dart';
 import 'package:todosaif/screens/addtask/addtask.dart';
 import 'package:todosaif/screens/home/components/appbar.dart';
@@ -16,32 +17,20 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  late List<Task> tasks;
+  List<Task>? tasks;
 
   bool isLoading = false;
 
   @override
   void initState() {
     super.initState();
-
-    refreshTasks();
+    Firebase.initializeApp().whenComplete(() {
+      print("Firebase Initialization Completed");
+      setState(() {});
+    });
   }
 
   @override
-  void dispose() {
-    TasksDatabase.instance.close();
-
-    super.dispose();
-  }
-
-  Future refreshTasks() async {
-    setState(() => isLoading = true);
-
-    tasks = await TasksDatabase.instance.readAllTasks();
-
-    setState(() => isLoading = false);
-  }
-
   final _advancedDrawerController = AdvancedDrawerController();
 
   @override
@@ -69,11 +58,10 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Scaffold(
           //backgroundColor: const Color.fromRGBO(248, 250, 254, 1),
           appBar: appBar(_advancedDrawerController, _handleMenuButtonPressed),
-          body: Body(tasks: tasks),
+          body: Body(),
           floatingActionButton: FloatingActionButton(
             heroTag: 'bottomRightAddTaskButton',
             onPressed: () {
-              // Add your onPressed code here!
               Navigator.push(
                 context,
                 MaterialPageRoute(

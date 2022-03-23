@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:todosaif/components/theme.dart';
 import 'package:todosaif/utils/sizedbox.dart';
 
-Widget taskCards() {
+Widget taskCards(String name, Color priority) {
   return Container(
     padding: const EdgeInsets.only(right: 20),
     height: 80,
@@ -15,13 +15,13 @@ Widget taskCards() {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            const Icon(
+            Icon(
               Icons.circle_outlined,
-              color: Colors.blue,
+              color: priority,
             ),
             horizontalBox(20),
-            const Text(
-              'Finish your business plan',
+            Text(
+              name,
               style: TextStyle(
                   fontFamily: 'Halenoir',
                   color: colorPrimary,

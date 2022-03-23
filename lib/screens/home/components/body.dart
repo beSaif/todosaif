@@ -1,19 +1,37 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:todosaif/components/theme.dart';
-import 'package:todosaif/models/tasks.dart';
 import 'package:todosaif/screens/home/components/cards.dart';
 import 'package:todosaif/screens/home/components/taskcard.dart';
 import 'package:todosaif/utils/sizedbox.dart';
 
 class Body extends StatefulWidget {
-  final List<Task> tasks;
-  const Body({Key? key, required this.tasks}) : super(key: key);
+/*   final List<Task> tasks;
+  const Body({Key? key, required this.tasks}) : super(key: key); */
 
+  const Body({
+    Key? key,
+  }) : super(key: key);
   @override
   State<Body> createState() => _BodyState();
 }
 
 class _BodyState extends State<Body> {
+  List? tasks;
+
+  CollectionReference _collectionRef =
+      FirebaseFirestore.instance.collection('tasks');
+
+  Future<void> getData() async {
+    // Get docs from collection reference
+    QuerySnapshot querySnapshot = await _collectionRef.get();
+
+    // Get data from docs and convert map to List
+    final allData = querySnapshot.docs.map((doc) => doc.data()).toList();
+    tasks = allData;
+    print(tasks);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -22,6 +40,10 @@ class _BodyState extends State<Body> {
       ),
       child: Column(
         children: [
+          FloatingActionButton(onPressed: () {
+            print('Button Pressed');
+            getData();
+          }),
           //First Part
           verticalBox(30),
           const SizedBox(
@@ -89,7 +111,7 @@ class _BodyState extends State<Body> {
 
                 verticalBox(15),
                 // ignore: sized_box_for_whitespace
-                Expanded(
+/*                 Expanded(
                   child: ListView.builder(
                       itemCount: widget.tasks.length,
                       itemBuilder: (BuildContext context, int index) {
@@ -99,10 +121,17 @@ class _BodyState extends State<Body> {
                           return taskCards();
                         }
                       }),
+                ) */
+                Expanded(
+                  child: ListView.builder(
+                      itemCount: tasks?.length,
+                      itemBuilder: (BuildContext context, int index) {
+                        return taskCards("tasks[index]['name']", Colors.red);
+                      }),
                 )
               ],
             ),
-          )
+          ),
         ],
       ),
     );

@@ -1,5 +1,6 @@
 // ignore_for_file: avoid_print, prefer_typing_uninitialized_variables
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:todosaif/components/theme.dart';
 import 'package:todosaif/utils/sizedbox.dart';
@@ -21,6 +22,21 @@ class _AddTaskState extends State<AddTask> {
   var priority = 'green';
   int dayIcon = 1;
   int priorityIcon = 1;
+
+  addData(String name, String priority, String timing) {
+    Map<String, dynamic> demoData = {
+      "name": name,
+      "priority": priority,
+      "timing": timing,
+      "status": true
+    };
+
+    CollectionReference collectionReference =
+        FirebaseFirestore.instance.collection('tasks');
+    collectionReference.add(demoData);
+
+    print("Task added to firestore successfully");
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -207,6 +223,7 @@ class _AddTaskState extends State<AddTask> {
                         hintSize = 18;
                       });
                     } else {
+                      addData(name, priority, timing);
                       print(
                           "name: $name, priority: $priority, timing: $timing");
                       Navigator.of(context).pop();

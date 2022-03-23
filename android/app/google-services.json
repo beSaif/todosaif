@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "602700847056",
+    "project_id": "todosaifapp",
+    "storage_bucket": "todosaifapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602700847056:android:2d7fe754b7e77c6b358bd5",
+        "android_client_info": {
+          "package_name": "com.example.todosaif"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602700847056-d1q7bh49o21vnr68sfhkrg6asf80ro33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3eqNaxlYC_JUCn4TAzyvv9ymCvj9ryOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602700847056-d1q7bh49o21vnr68sfhkrg6asf80ro33.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
