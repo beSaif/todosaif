@@ -18,7 +18,6 @@ Widget taskCards(String name, String priority) {
 
   return Container(
     padding: const EdgeInsets.only(right: 20),
-    height: 80,
     width: 200,
     child: Card(
       child: Container(
@@ -31,13 +30,15 @@ Widget taskCards(String name, String priority) {
               color: color,
             ),
             horizontalBox(20),
-            Text(
-              name,
-              style: TextStyle(
-                  fontFamily: 'Halenoir',
-                  color: colorPrimary,
-                  fontSize: 18,
-                  fontWeight: FontWeight.w500),
+            Expanded(
+              child: Text(
+                name,
+                style: TextStyle(
+                    fontFamily: 'Halenoir',
+                    color: colorPrimary,
+                    fontSize: 18,
+                    fontWeight: FontWeight.w500),
+              ),
             )
           ],
         ),
