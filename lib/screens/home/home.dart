@@ -1,5 +1,5 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_core/firebase_core.dart';
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 import 'package:todosaif/components/theme.dart';
 import 'package:todosaif/models/tasks.dart';
@@ -24,17 +24,8 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-
-    //initialize firebase
-    Firebase.initializeApp().whenComplete(() {
-      print("Firebase Initialization Completed");
-      setState(() {});
-    });
-
-    //fetches data
   }
 
-  @override
   final _advancedDrawerController = AdvancedDrawerController();
 
   @override
@@ -62,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Scaffold(
           //backgroundColor: const Color.fromRGBO(248, 250, 254, 1),
           appBar: appBar(_advancedDrawerController, _handleMenuButtonPressed),
-          body: Body(),
+          body: const Body(),
           floatingActionButton: FloatingActionButton(
             heroTag: 'bottomRightAddTaskButton',
             onPressed: () {

@@ -19,6 +19,7 @@ class Body extends StatefulWidget {
 class _BodyState extends State<Body> {
   late List tasks;
 
+  // ignore: prefer_final_fields, unused_field
   CollectionReference _collectionRef =
       FirebaseFirestore.instance.collection('tasks');
 
@@ -27,6 +28,7 @@ class _BodyState extends State<Body> {
     super.initState();
   }
 
+  @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(
@@ -112,8 +114,7 @@ class _BodyState extends State<Body> {
                         }
                         return ListView(
                           children: snapshot.data!.docs.map((document) {
-                            return taskCards(
-                                document['name'], document['priority']);
+                            return taskCards(context, document);
                           }).toList(),
                         );
                       }),

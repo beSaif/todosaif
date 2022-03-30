@@ -21,7 +21,7 @@ Widget cards(int total, String priorityTime) {
               children: [
                 Text(
                   "$total tasks",
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontFamily: 'Halenoir',
                       color: colorAccent,
                       fontSize: 12,
@@ -29,7 +29,7 @@ Widget cards(int total, String priorityTime) {
                 ),
                 Text(
                   priorityTime,
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontFamily: 'Halenoir',
                       color: colorPrimary,
                       fontSize: 24,

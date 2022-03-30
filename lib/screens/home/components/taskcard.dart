@@ -1,10 +1,21 @@
-// ignore_for_file: avoid_unnecessary_containers
+// ignore_for_file: avoid_print
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:todosaif/components/theme.dart';
 import 'package:todosaif/utils/sizedbox.dart';
 
-Widget taskCards(String name, String priority) {
+Widget taskCards(BuildContext context, doc) {
+  String name = doc["name"];
+  String priority = doc["priority"];
+  String docID = doc.id;
+  Map<String, dynamic> docUndo = {
+    "name": doc["name"],
+    "priority": doc["priority"],
+    "timing": doc["timing"],
+    "status": doc["status"],
+    "createdOn": doc["createdOn"]
+  };
   late Color color;
   if (priority == 'red') {
     color = Colors.red;
@@ -25,15 +36,43 @@ Widget taskCards(String name, String priority) {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Icon(
-              Icons.circle_outlined,
-              color: color,
+            GestureDetector(
+              child: Icon(
+                Icons.circle_outlined,
+                color: color,
+              ),
+              onTap: () {
+                final snackBar = SnackBar(
+                  duration: const Duration(seconds: 3),
+                  backgroundColor: colorPrimary,
+                  content: const Text('Ooops :('),
+                  action: SnackBarAction(
+                    label: 'Undo',
+                    onPressed: () {
+                      print('pressed undo');
+                      FirebaseFirestore.instance
+                          .collection('tasks')
+                          .add(docUndo);
+                      print("Undo done");
+                    },
+                  ),
+                );
+
+                // Find the ScaffoldMessenger in the widget tree
+                // and use it to show a SnackBar.
+                ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                print('Deleting $docID');
+                FirebaseFirestore.instance
+                    .collection('tasks')
+                    .doc(docID)
+                    .delete();
+              },
             ),
             horizontalBox(20),
             Expanded(
               child: Text(
                 name,
-                style: TextStyle(
+                style: const TextStyle(
                     fontFamily: 'Halenoir',
                     color: colorPrimary,
                     fontSize: 18,
