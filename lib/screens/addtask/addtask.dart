@@ -6,7 +6,8 @@ import 'package:todosaif/components/theme.dart';
 import 'package:todosaif/utils/sizedbox.dart';
 
 class AddTask extends StatefulWidget {
-  const AddTask({Key? key}) : super(key: key);
+  final String user;
+  const AddTask({Key? key, required this.user}) : super(key: key);
 
   @override
   State<AddTask> createState() => _AddTaskState();
@@ -33,7 +34,7 @@ class _AddTaskState extends State<AddTask> {
     };
 
     CollectionReference collectionReference =
-        FirebaseFirestore.instance.collection('tasks');
+        FirebaseFirestore.instance.collection(widget.user);
     collectionReference.add(demoData);
 
     print("Task added to firestore successfully");

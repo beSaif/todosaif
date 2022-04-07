@@ -10,7 +10,8 @@ import 'package:todosaif/screens/home/components/drawer.dart';
 import 'package:flutter_advanced_drawer/flutter_advanced_drawer.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  final String user;
+  const HomeScreen({Key? key, required this.user}) : super(key: key);
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -52,15 +53,18 @@ class _HomeScreenState extends State<HomeScreen> {
       drawer: drawer(_advancedDrawerController),
       child: Scaffold(
           //backgroundColor: const Color.fromRGBO(248, 250, 254, 1),
-          appBar: appBar(_advancedDrawerController, _handleMenuButtonPressed),
-          body: const Body(),
+          appBar: appBar(
+              _advancedDrawerController, _handleMenuButtonPressed, context),
+          body: Body(
+            user: widget.user,
+          ),
           floatingActionButton: FloatingActionButton(
             heroTag: 'bottomRightAddTaskButton',
             onPressed: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const AddTask(),
+                  builder: (context) => AddTask(user: widget.user),
                 ),
               );
             },

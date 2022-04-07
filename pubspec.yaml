@@ -21,6 +21,8 @@ dependencies:
 
   # sqflite database
   sqflite: ^2.0.0+3
+  shared_preferences: ^2.0.13
+  shared_preferences_web: ^2.0.3
 
 dev_dependencies:
   flutter_test:

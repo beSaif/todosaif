@@ -14,3 +14,6 @@ ThemeData customTheme() {
   return ThemeData(
       scaffoldBackgroundColor: const Color.fromRGBO(248, 250, 254, 1));
 }
+
+CusTextStyle(Color color, double size, FontWeight weight) => TextStyle(
+    fontFamily: 'Halenoir', color: color, fontSize: size, fontWeight: weight);

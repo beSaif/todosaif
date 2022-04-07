@@ -6,12 +6,11 @@ import 'package:todosaif/screens/home/components/taskcard.dart';
 import 'package:todosaif/utils/sizedbox.dart';
 
 class Body extends StatefulWidget {
+  final String user;
 /*   final List<Task> tasks;
   const Body({Key? key, required this.tasks}) : super(key: key); */
 
-  const Body({
-    Key? key,
-  }) : super(key: key);
+  const Body({Key? key, required this.user}) : super(key: key);
   @override
   State<Body> createState() => _BodyState();
 }
@@ -20,8 +19,6 @@ class _BodyState extends State<Body> {
   late List tasks;
 
   // ignore: prefer_final_fields, unused_field
-  CollectionReference _collectionRef =
-      FirebaseFirestore.instance.collection('tasks');
 
   @override
   void initState() {
@@ -30,6 +27,8 @@ class _BodyState extends State<Body> {
 
   @override
   Widget build(BuildContext context) {
+    CollectionReference _collectionRef =
+        FirebaseFirestore.instance.collection(widget.user);
     return Padding(
       padding: const EdgeInsets.only(
         left: 20,
@@ -38,11 +37,11 @@ class _BodyState extends State<Body> {
         children: [
           //First Part
           verticalBox(30),
-          const SizedBox(
+          SizedBox(
             width: double.infinity,
             height: 50,
             child: Text(
-              "What's Up, Saif!",
+              "What's Up, ${widget.user}",
               style: TextStyle(
                   fontFamily: 'Halenoir',
                   color: colorPrimary,
@@ -75,7 +74,6 @@ class _BodyState extends State<Body> {
                     children: <Widget>[
                       cards(3, "Red"),
                       cards(2, "Yellow"),
-                      cards(6, "Green"),
                     ],
                   ),
                 )
@@ -102,7 +100,7 @@ class _BodyState extends State<Body> {
                 Expanded(
                   child: StreamBuilder<QuerySnapshot>(
                       stream: FirebaseFirestore.instance
-                          .collection('tasks')
+                          .collection(widget.user)
                           .orderBy('createdOn', descending: true)
                           .snapshots(),
                       builder: (BuildContext context,
