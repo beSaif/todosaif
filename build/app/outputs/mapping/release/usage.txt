@@ -4725,8 +4725,8 @@ com.google.protobuf.DescriptorProtos$DescriptorProto
 com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty:
     public void <init>(com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty)
 com.google.common.util.concurrent.AbstractService$1
-com.google.type.Date$Builder
 com.google.type.Quaternion$Builder
+com.google.type.Date$Builder
 io.flutter.app.FlutterActivityEvents
 kotlin.ranges.UIntProgressionIterator
 com.google.firestore.v1.BeginTransactionResponse$1
@@ -7682,8 +7682,8 @@ com.google.common.util.concurrent.AbstractScheduledService$ServiceDelegate$1
 com.google.common.util.concurrent.AbstractIdleService$DelegateService
 kotlin.io.ByteStreamsKt$iterator$1
 kotlin.coroutines.jvm.internal.RunSuspend
-io.grpc.internal.MigratingThreadDeframer$1RequestAgainOp
 com.google.protobuf.Type
+io.grpc.internal.MigratingThreadDeframer$1RequestAgainOp
 com.tekartik.sqflite.Database:
     public boolean enableWriteAheadLogging()
 kotlinx.coroutines.flow.FlowKt__ReduceKt$first$$inlined$collectWhile$2
@@ -21726,10 +21726,10 @@ io.grpc.ClientInterceptors:
     static synthetic io.grpc.ClientCall access$100()
 io.flutter.plugin.common.PluginRegistry
 com.google.common.collect.Synchronized$SynchronizedMultiset
-com.google.firebase.firestore.auth.-$$Lambda$FirebaseAppCheckTokenProvider$hu48mr03bfT6X2LDSOXJket2KbA:
-    public final void onAppCheckTokenChanged(com.google.firebase.appcheck.AppCheckTokenResult)
 com.google.firebase.firestore.auth.-$$Lambda$FirebaseAuthCredentialsProvider$SiEkKBu9hz30n6jbv61jv-eXGhA:
     public final void onIdTokenChanged(com.google.firebase.internal.InternalTokenResult)
+com.google.firebase.firestore.auth.-$$Lambda$FirebaseAppCheckTokenProvider$hu48mr03bfT6X2LDSOXJket2KbA:
+    public final void onAppCheckTokenChanged(com.google.firebase.appcheck.AppCheckTokenResult)
 kotlinx.coroutines.scheduling.ExperimentalCoroutineDispatcher:
     public void close()
     public java.lang.String toString()

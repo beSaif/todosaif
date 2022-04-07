@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:todosaif/components/theme.dart';
 import 'package:flutter_advanced_drawer/flutter_advanced_drawer.dart';
+import 'package:todosaif/screens/login/login.dart';
 
 AppBar appBar(_advancedDrawerController, _handleMenuButtonPressed, context) {
   return AppBar(
@@ -35,7 +36,8 @@ AppBar appBar(_advancedDrawerController, _handleMenuButtonPressed, context) {
             preferences = await SharedPreferences.getInstance();
             await preferences.remove('UserLocal');
             print("Stored Local User: ${preferences.getString("UserLocal")}");
-            Navigator.pop(context);
+            Navigator.pushReplacement(
+                context, MaterialPageRoute(builder: (_) => LogIn()));
           },
           icon: const Icon(
             Icons.logout_outlined,

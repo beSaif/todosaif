@@ -17,7 +17,7 @@ class _LogInState extends State<LogIn> {
   late SharedPreferences preferences;
   final taskName = TextEditingController();
   var hintColor = colorAccent;
-  var hintText = 'Enter new task';
+  var hintText = 'Enter username';
   double hintSize = 30;
   var user;
   var timing = 'morning';
@@ -49,137 +49,143 @@ class _LogInState extends State<LogIn> {
           if (snapshot.hasData) {
             print("Loading Home Page");
             WidgetsBinding.instance?.addPostFrameCallback((_) {
-              Navigator.push(context,
+              Navigator.pushReplacement(context,
                   MaterialPageRoute(builder: (_) => HomeScreen(user: user)));
             });
           } else if (!snapshot.hasData) {
             print("Loading Login Page");
-            return Padding(
-              padding: const EdgeInsets.all(40),
-              child: Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "Let's sign you in.",
-                          style:
-                              CusTextStyle(colorPrimary, 38, FontWeight.bold),
-                        ),
-                        verticalBox(15),
-                        Text(
-                          "Welcome back.",
-                          style:
-                              CusTextStyle(colorPrimary, 28, FontWeight.w500),
-                        ),
-                        verticalBox(3),
-                        Text(
-                          "You've be missed!",
-                          style:
-                              CusTextStyle(colorPrimary, 28, FontWeight.w500),
-                        ),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        SizedBox(
-                          width: 300,
-                          child: TextFormField(
-                            controller: taskName,
-                            onChanged: (value) =>
-                                {print('Task: ${taskName.text}'), user = value},
-                            style: const TextStyle(
-                                fontFamily: 'Halenoir',
-                                color: colorPrimary,
-                                fontSize: 30,
-                                fontWeight: FontWeight.w700),
-                            decoration: InputDecoration(
-                                suffixIcon: IconButton(
-                                  onPressed: () async {
-                                    final snapshot = await FirebaseFirestore
-                                        .instance
-                                        .collection(user)
-                                        .get();
-
-                                    if (snapshot.size == 0) {
-                                      Map<String, dynamic> demoData = {
-                                        "name": 'Create a task',
-                                        "priority": 'green',
-                                        "timing": 'morning',
-                                        "status": true,
-                                        "createdOn":
-                                            FieldValue.serverTimestamp()
-                                      };
-                                      print("User: $user doesn't exist");
-                                      print("Creating $user...");
-                                      CollectionReference collectionReference =
-                                          FirebaseFirestore.instance
-                                              .collection(user);
-                                      collectionReference.doc().set(demoData);
-                                      print("$user created.");
-                                    } else {
-                                      print("User: $user exists");
-                                      preferences.setString('UserLocal', user);
-                                      print(preferences.get('UserLocal'));
-                                    }
-                                    Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) =>
-                                                HomeScreen(user: user)));
-
-                                    taskName.text = '';
-                                  },
-                                  icon: const Icon(
-                                    Icons.send,
-                                    color: colorPrimary,
-                                  ),
-                                ),
-                                border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(10),
-                                    borderSide: const BorderSide(
-                                      color: colorPrimary,
-                                      width: 5,
-                                    )),
-                                focusedBorder: const OutlineInputBorder(
-                                  borderSide: BorderSide(
-                                      color: colorPrimary, width: 2.0),
-                                ),
-                                enabledBorder: const OutlineInputBorder(
-                                  borderSide: BorderSide(
-                                    color: colorAccent,
-                                    width: 2.0,
-                                  ),
-                                ),
-                                hintText: hintText,
-                                hintStyle: TextStyle(
-                                    fontFamily: 'Halenoir',
-                                    color: hintColor,
-                                    fontSize: hintSize,
-                                    fontWeight: FontWeight.w700)),
-                          ),
-                        ),
-                        horizontalBox(10),
-                      ],
-                    ),
-                    Center(
-                      child: Column(
+            return SizedBox(
+              width: double.infinity,
+              child: Padding(
+                padding: const EdgeInsets.all(40),
+                child: Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Don't have an account?",
+                            "Let's sign you in.",
                             style:
-                                CusTextStyle(colorPrimary, 15, FontWeight.w500),
+                                CusTextStyle(colorPrimary, 38, FontWeight.bold),
                           ),
-                          Text("Type a username to create account.",
-                              style: CusTextStyle(
-                                  colorPrimary, 15, FontWeight.w600)),
+                          verticalBox(15),
+                          Text(
+                            "Welcome back.",
+                            style:
+                                CusTextStyle(colorPrimary, 28, FontWeight.w500),
+                          ),
+                          verticalBox(3),
+                          Text(
+                            "You've been missed!",
+                            style:
+                                CusTextStyle(colorPrimary, 28, FontWeight.w500),
+                          ),
                         ],
                       ),
-                    )
-                  ],
+                      Row(
+                        children: [
+                          Expanded(
+                            child: TextFormField(
+                              controller: taskName,
+                              onChanged: (value) => {
+                                print('Task: ${taskName.text}'),
+                                user = value
+                              },
+                              style: const TextStyle(
+                                  fontFamily: 'Halenoir',
+                                  color: colorPrimary,
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.w700),
+                              decoration: InputDecoration(
+                                  suffixIcon: IconButton(
+                                    onPressed: () async {
+                                      final snapshot = await FirebaseFirestore
+                                          .instance
+                                          .collection(user)
+                                          .get();
+
+                                      if (snapshot.size == 0) {
+                                        Map<String, dynamic> demoData = {
+                                          "name": 'Create a task',
+                                          "priority": 'green',
+                                          "timing": 'morning',
+                                          "status": true,
+                                          "createdOn":
+                                              FieldValue.serverTimestamp()
+                                        };
+                                        print("User: $user doesn't exist");
+                                        print("Creating $user...");
+                                        CollectionReference
+                                            collectionReference =
+                                            FirebaseFirestore.instance
+                                                .collection(user);
+                                        collectionReference.doc().set(demoData);
+                                        print("$user created.");
+                                      } else {
+                                        print("User: $user exists");
+                                        preferences.setString(
+                                            'UserLocal', user);
+                                        print(preferences.get('UserLocal'));
+                                      }
+                                      Navigator.pushReplacement(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  HomeScreen(user: user)));
+
+                                      taskName.text = '';
+                                    },
+                                    icon: const Icon(
+                                      Icons.send,
+                                      color: colorPrimary,
+                                    ),
+                                  ),
+                                  border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(10),
+                                      borderSide: const BorderSide(
+                                        color: colorPrimary,
+                                        width: 5,
+                                      )),
+                                  focusedBorder: const OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                        color: colorPrimary, width: 2.0),
+                                  ),
+                                  enabledBorder: const OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                      color: colorAccent,
+                                      width: 2.0,
+                                    ),
+                                  ),
+                                  hintText: hintText,
+                                  hintStyle: TextStyle(
+                                      fontFamily: 'Halenoir',
+                                      color: hintColor,
+                                      fontSize: hintSize,
+                                      fontWeight: FontWeight.w700)),
+                            ),
+                          ),
+                          horizontalBox(10),
+                        ],
+                      ),
+                      Center(
+                        child: Column(
+                          children: [
+                            Text(
+                              "Don't have an account?",
+                              style: CusTextStyle(
+                                  colorPrimary, 15, FontWeight.w500),
+                            ),
+                            Text("Type a username to create account.",
+                                style: CusTextStyle(
+                                    colorPrimary, 15, FontWeight.w600)),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
             );
