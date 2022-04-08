@@ -23,6 +23,8 @@ dependencies:
   sqflite: ^2.0.0+3
   shared_preferences: ^2.0.13
   shared_preferences_web: ^2.0.3
+  loader_overlay: ^2.0.6
+  flutter_spinkit: ^5.1.0
 
 dev_dependencies:
   flutter_test:

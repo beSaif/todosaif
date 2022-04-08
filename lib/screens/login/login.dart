@@ -1,8 +1,11 @@
+// ignore_for_file: avoid_print
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:todosaif/components/theme.dart';
-import 'package:todosaif/screens/home/components/body.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:loader_overlay/loader_overlay.dart';
 import 'package:todosaif/screens/home/home.dart';
 import 'package:todosaif/utils/sizedbox.dart';
 
@@ -54,137 +57,157 @@ class _LogInState extends State<LogIn> {
             });
           } else if (!snapshot.hasData) {
             print("Loading Login Page");
-            return SizedBox(
-              width: double.infinity,
-              child: Padding(
-                padding: const EdgeInsets.all(40),
-                child: Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Let's sign you in.",
-                            style:
-                                CusTextStyle(colorPrimary, 38, FontWeight.bold),
-                          ),
-                          verticalBox(15),
-                          Text(
-                            "Welcome back.",
-                            style:
-                                CusTextStyle(colorPrimary, 28, FontWeight.w500),
-                          ),
-                          verticalBox(3),
-                          Text(
-                            "You've been missed!",
-                            style:
-                                CusTextStyle(colorPrimary, 28, FontWeight.w500),
-                          ),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          Expanded(
-                            child: TextFormField(
-                              controller: taskName,
-                              onChanged: (value) => {
-                                print('Task: ${taskName.text}'),
-                                user = value
-                              },
-                              style: const TextStyle(
-                                  fontFamily: 'Halenoir',
-                                  color: colorPrimary,
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.w700),
-                              decoration: InputDecoration(
-                                  suffixIcon: IconButton(
-                                    onPressed: () async {
-                                      final snapshot = await FirebaseFirestore
-                                          .instance
-                                          .collection(user)
-                                          .get();
-
-                                      if (snapshot.size == 0) {
-                                        Map<String, dynamic> demoData = {
-                                          "name": 'Create a task',
-                                          "priority": 'green',
-                                          "timing": 'morning',
-                                          "status": true,
-                                          "createdOn":
-                                              FieldValue.serverTimestamp()
-                                        };
-                                        print("User: $user doesn't exist");
-                                        print("Creating $user...");
-                                        CollectionReference
-                                            collectionReference =
-                                            FirebaseFirestore.instance
-                                                .collection(user);
-                                        collectionReference.doc().set(demoData);
-                                        print("$user created.");
-                                      } else {
-                                        print("User: $user exists");
-                                        preferences.setString(
-                                            'UserLocal', user);
-                                        print(preferences.get('UserLocal'));
-                                      }
-                                      Navigator.pushReplacement(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) =>
-                                                  HomeScreen(user: user)));
-
-                                      taskName.text = '';
-                                    },
-                                    icon: const Icon(
-                                      Icons.send,
-                                      color: colorPrimary,
-                                    ),
-                                  ),
-                                  border: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(10),
-                                      borderSide: const BorderSide(
-                                        color: colorPrimary,
-                                        width: 5,
-                                      )),
-                                  focusedBorder: const OutlineInputBorder(
-                                    borderSide: BorderSide(
-                                        color: colorPrimary, width: 2.0),
-                                  ),
-                                  enabledBorder: const OutlineInputBorder(
-                                    borderSide: BorderSide(
-                                      color: colorAccent,
-                                      width: 2.0,
-                                    ),
-                                  ),
-                                  hintText: hintText,
-                                  hintStyle: TextStyle(
-                                      fontFamily: 'Halenoir',
-                                      color: hintColor,
-                                      fontSize: hintSize,
-                                      fontWeight: FontWeight.w700)),
-                            ),
-                          ),
-                          horizontalBox(10),
-                        ],
-                      ),
-                      Center(
-                        child: Column(
+            return LoaderOverlay(
+              useDefaultLoading: false,
+              overlayWidget: const Center(
+                child: SpinKitFoldingCube(
+                  color: colorPrimary,
+                ),
+              ),
+              child: SizedBox(
+                width: double.infinity,
+                child: Padding(
+                  padding: const EdgeInsets.all(40),
+                  child: Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "Don't have an account?",
+                              "Let's sign you in.",
                               style: CusTextStyle(
-                                  colorPrimary, 15, FontWeight.w500),
+                                  colorPrimary, 38, FontWeight.bold),
                             ),
-                            Text("Type a username to create account.",
-                                style: CusTextStyle(
-                                    colorPrimary, 15, FontWeight.w600)),
+                            verticalBox(15),
+                            Text(
+                              "Welcome back.",
+                              style: CusTextStyle(
+                                  colorPrimary, 28, FontWeight.w500),
+                            ),
+                            verticalBox(3),
+                            Text(
+                              "You've been missed!",
+                              style: CusTextStyle(
+                                  colorPrimary, 28, FontWeight.w500),
+                            ),
                           ],
                         ),
-                      )
-                    ],
+                        Row(
+                          children: [
+                            Expanded(
+                              child: TextFormField(
+                                controller: taskName,
+                                onChanged: (value) => {
+                                  print('Task: ${taskName.text}'),
+                                  user = value
+                                },
+                                style: const TextStyle(
+                                    fontFamily: 'Halenoir',
+                                    color: colorPrimary,
+                                    fontSize: 30,
+                                    fontWeight: FontWeight.w700),
+                                decoration: InputDecoration(
+                                    suffixIcon: IconButton(
+                                      onPressed: () async {
+                                        if (user == null) {
+                                          print("Enter username");
+                                        } else {
+                                          context.loaderOverlay.show();
+                                          final snapshot =
+                                              await FirebaseFirestore.instance
+                                                  .collection(user)
+                                                  .get();
+
+                                          if (snapshot.size == 0) {
+                                            Map<String, dynamic> demoData = {
+                                              "name": 'Create a task',
+                                              "priority": 'green',
+                                              "timing": 'morning',
+                                              "status": true,
+                                              "createdOn":
+                                                  FieldValue.serverTimestamp()
+                                            };
+                                            print("User: $user doesn't exist");
+                                            print("Creating $user...");
+                                            CollectionReference
+                                                collectionReference =
+                                                FirebaseFirestore.instance
+                                                    .collection(user);
+                                            collectionReference
+                                                .doc()
+                                                .set(demoData);
+                                            print("$user created.");
+                                          } else {
+                                            print("User: $user exists");
+                                            preferences.setString(
+                                                'UserLocal', user);
+                                            print(preferences.get('UserLocal'));
+                                          }
+
+                                          await Future.delayed(
+                                              const Duration(seconds: 2), () {
+                                            context.loaderOverlay.hide();
+                                          });
+                                          Navigator.pushReplacement(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      HomeScreen(user: user)));
+
+                                          taskName.text = '';
+                                        }
+                                      },
+                                      icon: const Icon(
+                                        Icons.send,
+                                        color: colorPrimary,
+                                      ),
+                                    ),
+                                    border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(10),
+                                        borderSide: const BorderSide(
+                                          color: colorPrimary,
+                                          width: 5,
+                                        )),
+                                    focusedBorder: const OutlineInputBorder(
+                                      borderSide: BorderSide(
+                                          color: colorPrimary, width: 2.0),
+                                    ),
+                                    enabledBorder: const OutlineInputBorder(
+                                      borderSide: BorderSide(
+                                        color: colorAccent,
+                                        width: 2.0,
+                                      ),
+                                    ),
+                                    hintText: hintText,
+                                    hintStyle: TextStyle(
+                                        fontFamily: 'Halenoir',
+                                        color: hintColor,
+                                        fontSize: hintSize,
+                                        fontWeight: FontWeight.w700)),
+                              ),
+                            ),
+                            horizontalBox(10),
+                          ],
+                        ),
+                        Center(
+                          child: Column(
+                            children: [
+                              Text(
+                                "Don't have an account?",
+                                style: CusTextStyle(
+                                    colorPrimary, 15, FontWeight.w500),
+                              ),
+                              Text("Type a username to create account.",
+                                  style: CusTextStyle(
+                                      colorPrimary, 15, FontWeight.w600)),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ),

@@ -15,5 +15,6 @@ ThemeData customTheme() {
       scaffoldBackgroundColor: const Color.fromRGBO(248, 250, 254, 1));
 }
 
+// ignore: non_constant_identifier_names
 CusTextStyle(Color color, double size, FontWeight weight) => TextStyle(
     fontFamily: 'Halenoir', color: color, fontSize: size, fontWeight: weight);

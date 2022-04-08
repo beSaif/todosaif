@@ -27,8 +27,6 @@ class _BodyState extends State<Body> {
 
   @override
   Widget build(BuildContext context) {
-    CollectionReference _collectionRef =
-        FirebaseFirestore.instance.collection(widget.user);
     return Padding(
       padding: const EdgeInsets.only(
         left: 20,
@@ -41,8 +39,8 @@ class _BodyState extends State<Body> {
             width: double.infinity,
             height: 50,
             child: Text(
-              "What's Up, ${widget.user}",
-              style: TextStyle(
+              "What's Up, ${widget.user}!",
+              style: const TextStyle(
                   fontFamily: 'Halenoir',
                   color: colorPrimary,
                   fontSize: 30,
@@ -112,7 +110,7 @@ class _BodyState extends State<Body> {
                         }
                         return ListView(
                           children: snapshot.data!.docs.map((document) {
-                            return taskCards(context, document);
+                            return taskCards(context, document, widget.user);
                           }).toList(),
                         );
                       }),

@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:todosaif/components/theme.dart';
 import 'package:todosaif/utils/sizedbox.dart';
 
-Widget taskCards(BuildContext context, doc) {
+Widget taskCards(BuildContext context, doc, user) {
   String name = doc["name"];
   String priority = doc["priority"];
   String docID = doc.id;
@@ -50,9 +50,7 @@ Widget taskCards(BuildContext context, doc) {
                     label: 'Undo',
                     onPressed: () {
                       print('pressed undo');
-                      FirebaseFirestore.instance
-                          .collection('tasks')
-                          .add(docUndo);
+                      FirebaseFirestore.instance.collection(user).add(docUndo);
                       print("Undo done");
                     },
                   ),
@@ -62,10 +60,7 @@ Widget taskCards(BuildContext context, doc) {
                 // and use it to show a SnackBar.
                 ScaffoldMessenger.of(context).showSnackBar(snackBar);
                 print('Deleting $docID');
-                FirebaseFirestore.instance
-                    .collection('tasks')
-                    .doc(docID)
-                    .delete();
+                FirebaseFirestore.instance.collection(user).doc(docID).delete();
               },
             ),
             horizontalBox(20),

@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:todosaif/components/theme.dart';
@@ -37,7 +39,7 @@ AppBar appBar(_advancedDrawerController, _handleMenuButtonPressed, context) {
             await preferences.remove('UserLocal');
             print("Stored Local User: ${preferences.getString("UserLocal")}");
             Navigator.pushReplacement(
-                context, MaterialPageRoute(builder: (_) => LogIn()));
+                context, MaterialPageRoute(builder: (_) => const LogIn()));
           },
           icon: const Icon(
             Icons.logout_outlined,
