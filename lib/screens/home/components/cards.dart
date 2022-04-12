@@ -1,10 +1,15 @@
 // ignore_for_file: avoid_unnecessary_containers
-
 import 'package:flutter/material.dart';
 import 'package:todosaif/components/theme.dart';
 import 'package:todosaif/utils/sizedbox.dart';
 
 Widget cards(int total, String priorityTime) {
+  Color progressColor = Colors.blue;
+  double value = 1 - (total / 10);
+
+  if (total == 0) {
+    return Text("");
+  }
   return SizedBox(
     height: 160,
     width: 200,
@@ -36,10 +41,29 @@ Widget cards(int total, String priorityTime) {
                       fontWeight: FontWeight.w700),
                 ),
                 verticalBox(10),
-                const LinearProgressIndicator(
-                  value: 0.4,
+                LinearProgressIndicator(
+                  value: value,
                   backgroundColor: colorAccent,
-                )
+                  color: progressColor,
+                ),
+                verticalBox(2),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Text(
+                        (() {
+                          if (value == 1) {
+                            return "completed";
+                          }
+                          return "";
+                        }()),
+                        style: const TextStyle(
+                            fontFamily: 'Halenoir',
+                            color: colorAccent,
+                            fontSize: 12,
+                            fontWeight: FontWeight.w500)),
+                  ],
+                ),
               ],
             ),
           )
