@@ -9,210 +9,269 @@
 8-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="31" />
 9-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml
-10    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-11    <!-- <uses-sdk android:minSdkVersion="14" /> -->
-12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:13:5-79
-12-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:13:22-76
-13    <uses-permission android:name="android.permission.INTERNET" />
-13-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:14:5-67
-13-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:14:22-64
-14    <uses-permission android:name="android.permission.WAKE_LOCK" />
-14-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\c2805c0e97c61db136633709c05b811f\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:24:5-68
-14-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\c2805c0e97c61db136633709c05b811f\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:24:22-65
-15    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-15-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\c2805c0e97c61db136633709c05b811f\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:25:5-79
-15-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\c2805c0e97c61db136633709c05b811f\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:25:22-76
-16    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-16-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:26:5-110
-16-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:26:22-107
-17
-18    <application
-18-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:3:4-46:19
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.6.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\14b93615368c2249f1830e26ca064ab5\core-1.6.0\AndroidManifest.xml:24:18-86
-20        android:icon="@mipmap/ic_launcher"
-20-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:5:9-43
-21        android:label="todosaif" >
-21-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:4:9-33
-22        <activity
-22-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:6:9-40:20
-23            android:name="com.example.todosaif.MainActivity"
-23-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:7:13-41
-24            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-24-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:11:13-163
-25            android:exported="true"
-25-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:8:13-36
-26            android:hardwareAccelerated="true"
-26-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:12:13-47
-27            android:launchMode="singleTop"
-27-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:9:13-43
-28            android:theme="@style/LaunchTheme"
-28-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:10:13-47
-29            android:windowSoftInputMode="adjustResize" >
-29-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:13:13-55
-30
-31            <!--
-32                 Specifies an Android theme to apply to this Activity as soon as
-33                 the Android process has started. This theme is visible to the user
-34                 while the Flutter UI initializes. After that, this theme continues
-35                 to determine the Window background behind the Flutter UI.
-36            -->
-37            <meta-data
-37-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:18:13-21:17
-38                android:name="io.flutter.embedding.android.NormalTheme"
-38-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:19:15-70
-39                android:resource="@style/NormalTheme" />
-39-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:20:15-52
-40            <!--
-41                 Displays an Android View that continues showing the launch screen
-42                 Drawable until Flutter paints its first frame, then this splash
-43                 screen fades out. A splash screen is useful to avoid any visual
-44                 gap between the end of Android's launch screen and the painting of
-45                 Flutter's first frame.
-46            -->
-47
-48
-49            <!-- This was commented due to splash screens error in debug console -->
-50            <!--
-51              <meta-data
-52              android:name="io.flutter.embedding.android.SplashScreenDrawable"
-53              android:resource="@drawable/launch_background"
-54              />
-55            -->
-56
-57            <intent-filter>
-57-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:36:13-39:29
-58                <action android:name="android.intent.action.MAIN" />
-58-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:37:17-68
-58-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:37:25-66
+10
+11    <queries>
+11-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:3:9-24:11
+12
+13        <!-- If your app opens https URLs -->
+14        <intent>
+14-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:5:3-8:12
+15            <action android:name="android.intent.action.VIEW" />
+15-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:6:5-57
+15-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:6:13-54
+16
+17            <data android:scheme="https" />
+17-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:7:5-36
+17-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:7:11-33
+18        </intent>
+19        <!-- If your app makes calls -->
+20        <intent>
+20-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:10:3-13:12
+21            <action android:name="android.intent.action.DIAL" />
+21-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:11:5-57
+21-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:11:13-54
+22
+23            <data android:scheme="tel" />
+23-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:7:5-36
+23-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:7:11-33
+24        </intent>
+25        <!-- If your sends SMS messages -->
+26        <intent>
+26-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:15:3-18:12
+27            <action android:name="android.intent.action.SENDTO" />
+27-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:16:5-59
+27-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:16:13-56
+28
+29            <data android:scheme="smsto" />
+29-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:7:5-36
+29-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:7:11-33
+30        </intent>
+31        <!-- If your app sends emails -->
+32        <intent>
+32-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:20:3-23:12
+33            <action android:name="android.intent.action.SEND" />
+33-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:21:5-57
+33-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:21:13-54
+34
+35            <data android:mimeType="*/*" />
+35-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:7:5-36
+35-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:22:11-33
+36        </intent>
+37    </queries>
+38
+39    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+40    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+41    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+41-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:13:5-79
+41-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:13:22-76
+42    <uses-permission android:name="android.permission.INTERNET" />
+42-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:14:5-67
+42-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:14:22-64
+43    <uses-permission android:name="android.permission.WAKE_LOCK" />
+43-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\c2805c0e97c61db136633709c05b811f\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:24:5-68
+43-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\c2805c0e97c61db136633709c05b811f\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:24:22-65
+44    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+44-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\c2805c0e97c61db136633709c05b811f\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:25:5-79
+44-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\c2805c0e97c61db136633709c05b811f\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:25:22-76
+45    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+45-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:26:5-110
+45-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:26:22-107
+46
+47    <application
+47-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:25:4-68:19
+48        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+48-->[androidx.core:core:1.6.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\14b93615368c2249f1830e26ca064ab5\core-1.6.0\AndroidManifest.xml:24:18-86
+49        android:icon="@mipmap/ic_launcher"
+49-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:27:9-43
+50        android:label="todosaif" >
+50-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:26:9-33
+51        <activity
+51-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:28:9-62:20
+52            android:name="com.example.todosaif.MainActivity"
+52-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:29:13-41
+53            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+53-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:33:13-163
+54            android:exported="true"
+54-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:30:13-36
+55            android:hardwareAccelerated="true"
+55-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:34:13-47
+56            android:launchMode="singleTop"
+56-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:31:13-43
+57            android:theme="@style/LaunchTheme"
+57-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:32:13-47
+58            android:windowSoftInputMode="adjustResize" >
+58-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:35:13-55
 59
-60                <category android:name="android.intent.category.LAUNCHER" />
-60-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:38:17-76
-60-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:38:27-74
-61            </intent-filter>
-62        </activity>
-63        <!--
-64             Don't delete the meta-data below.
-65             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-66        -->
-67        <meta-data
-67-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:43:9-45:33
-68            android:name="flutterEmbedding"
-68-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:44:13-44
-69            android:value="2" />
-69-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:45:13-30
-70
-71        <service
-71-->[:cloud_firestore] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:8:9-12:19
-72            android:name="com.google.firebase.components.ComponentDiscoveryService"
-72-->[:cloud_firestore] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:8:18-89
-73            android:directBootAware="true"
-73-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:35:13-43
-74            android:exported="false" >
-74-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:19:13-37
-75            <meta-data
-75-->[:cloud_firestore] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
-76                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-76-->[:cloud_firestore] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:10:17-134
-77                android:value="com.google.firebase.components.ComponentRegistrar" />
-77-->[:cloud_firestore] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
-78            <meta-data
-78-->[:firebase_core] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
-79                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-79-->[:firebase_core] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:10:17-124
-80                android:value="com.google.firebase.components.ComponentRegistrar" />
-80-->[:firebase_core] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
-81            <meta-data
-81-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:20:13-22:85
-82                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-82-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:21:17-111
-83                android:value="com.google.firebase.components.ComponentRegistrar" />
-83-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:22:17-82
-84            <meta-data
-84-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\c2805c0e97c61db136633709c05b811f\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:31:13-33:85
-85                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-85-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\c2805c0e97c61db136633709c05b811f\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:32:17-139
-86                android:value="com.google.firebase.components.ComponentRegistrar" />
-86-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\c2805c0e97c61db136633709c05b811f\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:33:17-82
-87            <meta-data
-87-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\5c0bcaf225cb7771e65a14163b1c7474\jetified-firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
-88                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-88-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\5c0bcaf225cb7771e65a14163b1c7474\jetified-firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
-89                android:value="com.google.firebase.components.ComponentRegistrar" />
-89-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\5c0bcaf225cb7771e65a14163b1c7474\jetified-firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
-90        </service>
-91
-92        <uses-library
-92-->[androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
-93            android:name="androidx.window.extensions"
-93-->[androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
-94            android:required="false" />
-94-->[androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
-95        <uses-library
-95-->[androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
-96            android:name="androidx.window.sidecar"
-96-->[androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
-97            android:required="false" />
-97-->[androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
-98
-99        <provider
-99-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:26:9-31:39
-100            android:name="com.google.firebase.provider.FirebaseInitProvider"
-100-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:27:13-77
-101            android:authorities="com.example.todosaif.firebaseinitprovider"
-101-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:28:13-72
+60            <!--
+61                 Specifies an Android theme to apply to this Activity as soon as
+62                 the Android process has started. This theme is visible to the user
+63                 while the Flutter UI initializes. After that, this theme continues
+64                 to determine the Window background behind the Flutter UI.
+65            -->
+66            <meta-data
+66-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:40:13-43:17
+67                android:name="io.flutter.embedding.android.NormalTheme"
+67-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:41:15-70
+68                android:resource="@style/NormalTheme" />
+68-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:42:15-52
+69            <!--
+70                 Displays an Android View that continues showing the launch screen
+71                 Drawable until Flutter paints its first frame, then this splash
+72                 screen fades out. A splash screen is useful to avoid any visual
+73                 gap between the end of Android's launch screen and the painting of
+74                 Flutter's first frame.
+75            -->
+76
+77
+78            <!-- This was commented due to splash screens error in debug console -->
+79            <!--
+80              <meta-data
+81              android:name="io.flutter.embedding.android.SplashScreenDrawable"
+82              android:resource="@drawable/launch_background"
+83              />
+84            -->
+85
+86            <intent-filter>
+86-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:58:13-61:29
+87                <action android:name="android.intent.action.MAIN" />
+87-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:59:17-68
+87-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:59:25-66
+88
+89                <category android:name="android.intent.category.LAUNCHER" />
+89-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:60:17-76
+89-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:60:27-74
+90            </intent-filter>
+91        </activity>
+92        <!--
+93             Don't delete the meta-data below.
+94             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+95        -->
+96        <meta-data
+96-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:65:9-67:33
+97            android:name="flutterEmbedding"
+97-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:66:13-44
+98            android:value="2" />
+98-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:67:13-30
+99
+100        <service
+100-->[:cloud_firestore] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:8:9-12:19
+101            android:name="com.google.firebase.components.ComponentDiscoveryService"
+101-->[:cloud_firestore] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:8:18-89
 102            android:directBootAware="true"
-102-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:29:13-43
-103            android:exported="false"
-103-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:30:13-37
-104            android:initOrder="100" />
-104-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:31:13-36
-105
-106        <receiver
-106-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:29:9-33:20
-107            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-107-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:30:13-85
-108            android:enabled="true"
-108-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:31:13-35
-109            android:exported="false" >
-109-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:32:13-37
-110        </receiver>
-111
-112        <service
-112-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:35:9-38:40
-113            android:name="com.google.android.gms.measurement.AppMeasurementService"
-113-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:36:13-84
-114            android:enabled="true"
-114-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:37:13-35
-115            android:exported="false" />
-115-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:38:13-37
-116        <service
-116-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:39:9-43:72
-117            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-117-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:40:13-87
-118            android:enabled="true"
-118-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:41:13-35
-119            android:exported="false"
-119-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:42:13-37
-120            android:permission="android.permission.BIND_JOB_SERVICE" />
-120-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:43:13-69
-121
-122        <activity
-122-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\1c0769389455a4c14b7a50bc2530cb4a\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-123            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-123-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\1c0769389455a4c14b7a50bc2530cb4a\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-124            android:exported="false"
-124-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\1c0769389455a4c14b7a50bc2530cb4a\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-125            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-125-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\1c0769389455a4c14b7a50bc2530cb4a\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-126
-127        <meta-data
-127-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\4a1e8147c3db656939cfc830651ce63e\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
-128            android:name="com.google.android.gms.version"
-128-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\4a1e8147c3db656939cfc830651ce63e\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
-129            android:value="@integer/google_play_services_version" />
-129-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\4a1e8147c3db656939cfc830651ce63e\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
-130    </application>
-131
-132</manifest>
+102-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:35:13-43
+103            android:exported="false" >
+103-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:19:13-37
+104            <meta-data
+104-->[:cloud_firestore] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+105                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+105-->[:cloud_firestore] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:10:17-134
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[:cloud_firestore] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+107            <meta-data
+107-->[:firebase_core] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+108                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+108-->[:firebase_core] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:10:17-124
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[:firebase_core] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+110            <meta-data
+110-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:20:13-22:85
+111                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+111-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:21:17-111
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:22:17-82
+113            <meta-data
+113-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\c2805c0e97c61db136633709c05b811f\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:31:13-33:85
+114                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+114-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\c2805c0e97c61db136633709c05b811f\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:32:17-139
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\c2805c0e97c61db136633709c05b811f\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:33:17-82
+116            <meta-data
+116-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\5c0bcaf225cb7771e65a14163b1c7474\jetified-firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
+117                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+117-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\5c0bcaf225cb7771e65a14163b1c7474\jetified-firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\5c0bcaf225cb7771e65a14163b1c7474\jetified-firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
+119        </service>
+120
+121        <activity
+121-->[:url_launcher_android] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:8:9-11:74
+122            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+122-->[:url_launcher_android] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:9:13-74
+123            android:exported="false"
+123-->[:url_launcher_android] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:10:13-37
+124            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+124-->[:url_launcher_android] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:11:13-71
+125
+126        <uses-library
+126-->[androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+127            android:name="androidx.window.extensions"
+127-->[androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+128            android:required="false" />
+128-->[androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+129        <uses-library
+129-->[androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+130            android:name="androidx.window.sidecar"
+130-->[androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+131            android:required="false" />
+131-->[androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+132
+133        <provider
+133-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:26:9-31:39
+134            android:name="com.google.firebase.provider.FirebaseInitProvider"
+134-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:27:13-77
+135            android:authorities="com.example.todosaif.firebaseinitprovider"
+135-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:28:13-72
+136            android:directBootAware="true"
+136-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:29:13-43
+137            android:exported="false"
+137-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:30:13-37
+138            android:initOrder="100" />
+138-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:31:13-36
+139
+140        <receiver
+140-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:29:9-33:20
+141            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+141-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:30:13-85
+142            android:enabled="true"
+142-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:31:13-35
+143            android:exported="false" >
+143-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:32:13-37
+144        </receiver>
+145
+146        <service
+146-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:35:9-38:40
+147            android:name="com.google.android.gms.measurement.AppMeasurementService"
+147-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:36:13-84
+148            android:enabled="true"
+148-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:37:13-35
+149            android:exported="false" />
+149-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:38:13-37
+150        <service
+150-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:39:9-43:72
+151            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+151-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:40:13-87
+152            android:enabled="true"
+152-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:41:13-35
+153            android:exported="false"
+153-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:42:13-37
+154            android:permission="android.permission.BIND_JOB_SERVICE" />
+154-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a24ed264782a28a8bd8a2a61f3120368\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:43:13-69
+155
+156        <activity
+156-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\1c0769389455a4c14b7a50bc2530cb4a\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+157            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+157-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\1c0769389455a4c14b7a50bc2530cb4a\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+158            android:exported="false"
+158-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\1c0769389455a4c14b7a50bc2530cb4a\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+159            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+159-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\1c0769389455a4c14b7a50bc2530cb4a\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+160
+161        <meta-data
+161-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\4a1e8147c3db656939cfc830651ce63e\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+162            android:name="com.google.android.gms.version"
+162-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\4a1e8147c3db656939cfc830651ce63e\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+163            android:value="@integer/google_play_services_version" />
+163-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\4a1e8147c3db656939cfc830651ce63e\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+164    </application>
+165
+166</manifest>

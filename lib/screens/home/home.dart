@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
         // ],
         borderRadius: BorderRadius.all(Radius.circular(16)),
       ),
-      drawer: drawer(_advancedDrawerController),
+      drawer: drawer(_advancedDrawerController, widget.user, context),
       child: Scaffold(
           //backgroundColor: const Color.fromRGBO(248, 250, 254, 1),
           appBar: appBar(

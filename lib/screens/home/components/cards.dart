@@ -8,7 +8,7 @@ Widget cards(int total, String priorityTime) {
   double value = 1 - (total / 10);
 
   if (total == 0) {
-    return Text("");
+    return const Text("");
   }
   return SizedBox(
     height: 160,

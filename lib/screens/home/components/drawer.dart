@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:todosaif/components/theme.dart';
+import 'package:todosaif/screens/settings/settings.dart';
 import 'package:todosaif/utils/sizedbox.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-SafeArea drawer(_advancedDrawerController) {
+SafeArea drawer(_advancedDrawerController, user, context) {
   return SafeArea(
     child: ListTileTheme(
       textColor: Colors.white,
@@ -45,13 +47,20 @@ SafeArea drawer(_advancedDrawerController) {
                 color: Colors.black26,
                 shape: BoxShape.circle,
               ),
-              child: Image.asset(
-                'assets/images/dp.jpg',
+              child: Center(
+                child: Text(
+                  user[0],
+                  style: const TextStyle(
+                      fontFamily: 'Halenoir',
+                      color: Colors.white,
+                      fontSize: 50,
+                      fontWeight: FontWeight.w900),
+                ),
               ),
             ),
-            const Text(
-              "Saif",
-              style: TextStyle(
+            Text(
+              user,
+              style: const TextStyle(
                   fontFamily: 'Halenoir',
                   color: Colors.white,
                   fontSize: 30,
@@ -59,7 +68,9 @@ SafeArea drawer(_advancedDrawerController) {
             ),
             verticalBox(20),
             ListTile(
-              onTap: () {},
+              onTap: () {
+                _advancedDrawerController.hideDrawer();
+              },
               leading: const Icon(
                 Icons.home_outlined,
                 color: colorAccent,
@@ -70,20 +81,26 @@ SafeArea drawer(_advancedDrawerController) {
               ),
             ),
             ListTile(
-              onTap: () {},
-              leading: const Icon(Icons.category_outlined, color: colorAccent),
-              title: const Text('Categories', style: navTextStyle),
-            ),
-            ListTile(
-              onTap: () {},
-              leading: const Icon(Icons.analytics_outlined, color: colorAccent),
-              title: const Text('Analytics', style: navTextStyle),
-            ),
-            ListTile(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => Settings(user: user)));
+              },
               leading: const Icon(Icons.settings_outlined, color: colorAccent),
               title: const Text('Settings', style: navTextStyle),
             ),
+            // ListTile(
+            //   onTap: () {},
+            //   leading: const Icon(Icons.category_outlined, color: colorAccent),
+            //   title: const Text('Categories', style: navTextStyle),
+            // ),
+            // ListTile(
+            //   onTap: () {},
+            //   leading: const Icon(Icons.analytics_outlined, color: colorAccent),
+            //   title: const Text('Analytics', style: navTextStyle),
+            // ),
+
             const Spacer(),
             DefaultTextStyle(
               style: const TextStyle(
@@ -94,7 +111,29 @@ SafeArea drawer(_advancedDrawerController) {
                 margin: const EdgeInsets.symmetric(
                   vertical: 16.0,
                 ),
-                child: const Text('Terms of Service | Privacy Policy'),
+                child: Center(
+                    child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    Text(
+                      'developed by ',
+                      style: CusTextStyle(Colors.white, 12, FontWeight.w400),
+                    ),
+                    GestureDetector(
+                      onTap: () async {
+                        //print("Launching @be.saif insta");
+                        const String url = 'https://www.instagram.com/be.saif/';
+                        if (await canLaunch(url)) {
+                          await launch(url);
+                        }
+                      },
+                      child: Text('be.Saif',
+                          style:
+                              CusTextStyle(Colors.white, 15, FontWeight.w700)),
+                    ),
+                  ],
+                )),
               ),
             ),
           ],

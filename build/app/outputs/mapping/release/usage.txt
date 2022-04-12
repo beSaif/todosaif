@@ -1241,6 +1241,7 @@ io.grpc.internal.ReadableBuffers$BufferInputStream:
     public java.io.InputStream detach()
 androidx.annotation.RawRes
 kotlin.OverloadResolutionByLambdaReturnType
+io.flutter.plugins.urllauncher.R$layout
 androidx.fragment.R$dimen
 kotlinx.coroutines.internal.ExceptionsConstuctorKt:
     private static final kotlin.jvm.functions.Function1 safeCtor(kotlin.jvm.functions.Function1)
@@ -5537,6 +5538,7 @@ io.grpc.internal.DelayedStream$15
 kotlin.time.TimeMark
 com.squareup.okhttp.internal.framed.Hpack$Writer
 kotlin.jvm.internal.Ref$FloatRef
+io.flutter.plugins.urllauncher.R$id
 io.flutter.embedding.engine.renderer.FlutterRenderer:
     public android.graphics.Bitmap getBitmap()
     public void setAccessibilityFeatures(int)
@@ -5631,6 +5633,7 @@ io.flutter.embedding.engine.renderer.FlutterRenderer$ViewportMetrics:
 com.squareup.okhttp.internal.http.Http1xStream$AbstractSource
 com.google.android.gms.common.annotation.NonNullApi
 com.google.common.eventbus.SubscriberRegistry
+io.flutter.plugins.urllauncher.R
 com.google.protobuf.DescriptorProtos$EnumValueDescriptorProto
 io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineContentProviderPluginBinding:
     void <init>(android.content.ContentProvider)
@@ -5935,6 +5938,7 @@ kotlin.collections.CollectionsKt__CollectionsKt:
     public static final void throwCountOverflow()
     public void <init>()
 okio.PeekSource
+io.flutter.plugins.urllauncher.R$style
 com.google.common.primitives.Bytes
 io.perfmark.Impl:
     protected static java.lang.String unpackTagName(io.perfmark.Tag)
@@ -7368,6 +7372,7 @@ com.google.firebase.components.Component$Builder:
 com.google.android.gms.common.api.internal.zab
 com.google.common.collect.Lists$TransformingRandomAccessList
 com.google.api.AuthenticationRule$1
+io.flutter.plugins.urllauncher.R$styleable
 com.google.common.collect.DiscreteDomain$1
 com.google.firebase.firestore.local.LruGarbageCollector$Params:
     public static com.google.firebase.firestore.local.LruGarbageCollector$Params Default()
@@ -7678,6 +7683,7 @@ com.google.firebase.installations.R$string
 com.google.api.Distribution$Builder
 com.google.common.collect.SortedIterables
 com.google.common.collect.ImmutableMapEntrySet$RegularEntrySet
+io.flutter.plugins.urllauncher.R$string
 com.google.common.util.concurrent.AbstractScheduledService$ServiceDelegate$1
 com.google.common.util.concurrent.AbstractIdleService$DelegateService
 kotlin.io.ByteStreamsKt$iterator$1
@@ -7939,6 +7945,8 @@ com.google.common.collect.CollectPreconditions:
     static void checkRemove(boolean)
 com.google.api.Monitoring$MonitoringDestination$Builder
 com.google.protobuf.DescriptorProtos$EnumDescriptorProto$EnumReservedRange$Builder
+io.flutter.plugins.urllauncher.UrlLauncher:
+    private static final java.lang.String TAG
 kotlin.internal.AccessibleLateinitPropertyLiteral
 kotlin.jvm.internal.ShortSpreadBuilder
 com.google.api.SystemParameter$1
@@ -7998,6 +8006,7 @@ kotlin.reflect.KType:
 com.google.common.collect.LinkedHashMultimap
 com.google.firebase.analytics.FirebaseAnalytics$ConsentStatus
 com.google.firestore.v1.DocumentTransform$FieldTransform$ServerValue$ServerValueVerifier
+io.flutter.plugins.urllauncher.R$drawable
 kotlinx.coroutines.flow.FlowKt__ErrorsKt$onErrorCollect$2
 com.google.common.collect.Lists$StringAsImmutableList
 com.google.firestore.v1.BeginTransactionResponse
@@ -9475,6 +9484,7 @@ com.google.type.DayOfWeek$1
 kotlinx.coroutines.flow.internal.StackFrameContinuation
 com.google.firebase.firestore.proto.Mutation
 com.google.common.reflect.TypeResolver$1
+io.flutter.plugins.urllauncher.R$color
 com.google.android.gms.common.internal.safeparcel.SafeParcelable$Field
 com.google.protobuf.DescriptorProtos$FieldDescriptorProto$Label$LabelVerifier
 com.google.longrunning.ListOperationsResponse
@@ -11224,6 +11234,8 @@ com.google.firebase.components.Preconditions:
     public void <init>()
 kotlin.jvm.JvmOverloads
 kotlin.ranges.UIntRange
+io.flutter.plugins.urllauncher.MethodCallHandlerImpl:
+    private static final java.lang.String TAG
 com.google.common.graph.DirectedGraphConnections$PredAndSucc
 com.google.android.gms.common.data.DataBufferObserver$Observable
 com.google.api.Billing$BillingDestination$Builder
@@ -13482,6 +13494,7 @@ com.google.protobuf.Timestamp:
     public static com.google.protobuf.Parser parser()
     static synthetic void access$200(com.google.protobuf.Timestamp)
     static synthetic void access$400(com.google.protobuf.Timestamp)
+io.flutter.plugins.urllauncher.R$integer
 kotlin.jvm.internal.markers.KMutableSet
 com.google.protobuf.DescriptorProtos$ExtensionRangeOptionsOrBuilder
 com.google.common.primitives.SignedBytes
@@ -14515,6 +14528,7 @@ com.google.firestore.v1.DocumentTransform:
 com.squareup.okhttp.RequestBody$2
 kotlinx.coroutines.flow.internal.ChannelFlowOperator
 io.grpc.internal.DelayedClientCall$4
+io.flutter.plugins.urllauncher.R$attr
 com.google.common.base.CaseFormat$StringConverter
 com.google.firestore.v1.DocumentChange:
     private void setDocument(com.google.firestore.v1.Document)
@@ -16704,6 +16718,7 @@ kotlin.KotlinNothingValueException:
     public void <init>(java.lang.Throwable)
 kotlin.io.AccessDeniedException
 com.google.geo.type.Viewport
+io.flutter.plugins.urllauncher.BuildConfig
 com.google.firebase.installations.R$id
 com.google.firebase.BuildConfig
 kotlinx.coroutines.flow.FlowKt__MergeKt$flatMapMerge$$inlined$map$1
@@ -17386,6 +17401,9 @@ com.google.common.eventbus.SubscriberRegistry$MethodIdentifier
 kotlin.sequences.USequencesKt___USequencesKt
 com.google.common.collect.MapMakerInternalMap$WeakKeyStrongValueEntry
 com.google.common.collect.Multimap
+io.flutter.plugins.urllauncher.UrlLauncherPlugin:
+    public static void registerWith(io.flutter.plugin.common.PluginRegistry$Registrar)
+    private static final java.lang.String TAG
 com.google.android.gms.actions.ReserveIntents
 io.perfmark.StringFunction
 com.google.common.collect.TreeRangeSet$SubRangeSetRangesByLowerBound$1
@@ -18911,6 +18929,7 @@ androidx.core.text.TextDirectionHeuristicsCompat$AnyStrong
 org.intellij.lang.annotations.JdkConstants$TreeSelectionMode
 com.google.gson.JsonArray
 com.squareup.okhttp.internal.InternalCache
+io.flutter.plugins.urllauncher.R$dimen
 com.google.firebase.firestore.DocumentReference:
     public java.lang.String getId()
     public com.google.firebase.firestore.CollectionReference getParent()
@@ -22202,6 +22221,8 @@ com.google.android.gms.internal.base.zac:
     private static final java.lang.ClassLoader zaa
 com.google.protobuf.ExtensionRegistryLite:
     private static volatile boolean eagerlyParseMessageSets
+io.flutter.plugins.urllauncher.WebViewActivity$2:
+    final synthetic io.flutter.plugins.urllauncher.WebViewActivity this$0
 com.google.android.gms.internal.measurement.zzgb:
     public static com.google.android.gms.internal.measurement.zzfz zza()
     static synthetic void zzc(com.google.android.gms.internal.measurement.zzgb,com.google.android.gms.internal.measurement.zzfq)

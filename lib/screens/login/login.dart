@@ -22,6 +22,7 @@ class _LogInState extends State<LogIn> {
   var hintColor = colorAccent;
   var hintText = 'Enter username';
   double hintSize = 30;
+  // ignore: prefer_typing_uninitialized_variables
   var user;
   var timing = 'morning';
   var priority = 'green';
@@ -212,8 +213,6 @@ class _LogInState extends State<LogIn> {
                 ),
               ),
             );
-
-            // if we got our data
           }
         }
 

@@ -233,7 +233,7 @@ class _AddTaskState extends State<AddTask> {
 
                     // Respond to button press
                   },
-                  label: const Text('Submit'),
+                  label: const Text('Add Task'),
                   icon: const Icon(Icons.check),
                 ),
               ),

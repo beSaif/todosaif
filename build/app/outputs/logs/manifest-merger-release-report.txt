@@ -1,13 +1,14 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:1:1-47:12
-INJECTED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:1:1-47:12
-INJECTED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:1:1-47:12
-INJECTED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:1:1-47:12
+ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:1:1-71:12
+INJECTED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:1:1-71:12
+INJECTED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:1:1-71:12
+INJECTED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:1:1-71:12
 MERGED from [:shared_preferences_android] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\shared_preferences_android\intermediates\library_manifest\release\AndroidManifest.xml:2:1-7:12
 MERGED from [:cloud_firestore] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:2:1-15:12
 MERGED from [:firebase_core] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:2:1-15:12
 MERGED from [:sqflite] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\sqflite\intermediates\library_manifest\release\AndroidManifest.xml:2:1-7:12
+MERGED from [:url_launcher_android] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:2:1-14:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a3b86b42fafb2019c6d99a912992ce19\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
 MERGED from [com.google.firebase:firebase-analytics:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\fb86c3699f625cd8f9d3bba96282578e\jetified-firebase-analytics-20.1.1\AndroidManifest.xml:2:1-9:12
@@ -52,29 +53,63 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Saifu\.gradl
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\2341977d1a91ba1cfe2b6d080a2fe8a6\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\bb034e126f121bd1853821de7e6d9777\jetified-grpc-android-1.44.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\7e5cb6c6f9437da119823e44c35d9b10\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:1:1-47:12
-INJECTED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:1:1-47:12
-INJECTED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:1:1-47:12
+INJECTED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:1:1-71:12
+INJECTED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:1:1-71:12
+INJECTED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:1:1-71:12
 	package
 		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:2:5-35
 		INJECTED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:1:1-47:12
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:1:1-71:12
 		INJECTED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:1:1-47:12
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:1:1-71:12
 		INJECTED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:1:11-69
+queries
+ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:3:9-24:11
+intent#action:name:android.intent.action.VIEW+data:scheme:https
+ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:5:3-8:12
+action#android.intent.action.VIEW
+ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:6:5-57
+	android:name
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:6:13-54
+data
+ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:7:5-36
+	android:scheme
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:7:11-33
+	android:mimeType
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:22:11-33
+intent#action:name:android.intent.action.DIAL+data:scheme:tel
+ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:10:3-13:12
+action#android.intent.action.DIAL
+ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:11:5-57
+	android:name
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:11:13-54
+intent#action:name:android.intent.action.SENDTO+data:scheme:smsto
+ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:15:3-18:12
+action#android.intent.action.SENDTO
+ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:16:5-59
+	android:name
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:16:13-56
+intent#action:name:android.intent.action.SEND+data:mimeType:*/*
+ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:20:3-23:12
+action#android.intent.action.SEND
+ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:21:5-57
+	android:name
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:21:13-54
 application
-ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:3:4-46:19
+ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:25:4-68:19
 MERGED from [:cloud_firestore] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:7:5-13:19
 MERGED from [:cloud_firestore] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:7:5-13:19
+MERGED from [:url_launcher_android] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher_android] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:7:5-12:19
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
 MERGED from [com.google.firebase:firebase-analytics:20.1.1] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\fb86c3699f625cd8f9d3bba96282578e\jetified-firebase-analytics-20.1.1\AndroidManifest.xml:7:5-20
@@ -118,47 +153,47 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Sa
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.6.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\14b93615368c2249f1830e26ca064ab5\core-1.6.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:4:9-33
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:26:9-33
 	android:icon
-		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:5:9-43
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:27:9-43
 activity#com.example.todosaif.MainActivity
-ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:6:9-40:20
+ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:28:9-62:20
 	android:launchMode
-		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:9:13-43
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:31:13-43
 	android:hardwareAccelerated
-		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:12:13-47
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:34:13-47
 	android:windowSoftInputMode
-		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:13:13-55
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:35:13-55
 	android:exported
-		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:8:13-36
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:30:13-36
 	android:configChanges
-		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:11:13-163
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:33:13-163
 	android:theme
-		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:10:13-47
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:32:13-47
 	android:name
-		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:7:13-41
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:29:13-41
 meta-data#io.flutter.embedding.android.NormalTheme
-ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:18:13-21:17
+ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:40:13-43:17
 	android:resource
-		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:20:15-52
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:42:15-52
 	android:name
-		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:19:15-70
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:41:15-70
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:36:13-39:29
+ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:58:13-61:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:37:17-68
+ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:59:17-68
 	android:name
-		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:37:25-66
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:59:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:38:17-76
+ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:60:17-76
 	android:name
-		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:38:27-74
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:60:27-74
 meta-data#flutterEmbedding
-ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:43:9-45:33
+ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:65:9-67:33
 	android:value
-		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:45:13-30
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:67:13-30
 	android:name
-		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:44:13-44
+		ADDED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:66:13-44
 uses-sdk
 INJECTED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml
@@ -171,6 +206,8 @@ MERGED from [:firebase_core] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\buil
 MERGED from [:firebase_core] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
 MERGED from [:sqflite] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\sqflite\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
 MERGED from [:sqflite] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\sqflite\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a3b86b42fafb2019c6d99a912992ce19\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\a3b86b42fafb2019c6d99a912992ce19\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
@@ -301,6 +338,14 @@ ADDED from [:firebase_core] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build
 		ADDED from [:firebase_core] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
 	android:name
 		ADDED from [:firebase_core] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:10:17-124
+activity#io.flutter.plugins.urllauncher.WebViewActivity
+ADDED from [:url_launcher_android] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:8:9-11:74
+	android:exported
+		ADDED from [:url_launcher_android] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [:url_launcher_android] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:11:13-71
+	android:name
+		ADDED from [:url_launcher_android] C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:9:13-74
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
 	android:required
