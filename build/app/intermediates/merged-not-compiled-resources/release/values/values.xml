@@ -120,7 +120,7 @@
     <string name="default_web_client_id" translatable="false">602700847056-d1q7bh49o21vnr68sfhkrg6asf80ro33.apps.googleusercontent.com</string>
     <string name="gcm_defaultSenderId" translatable="false">602700847056</string>
     <string name="google_api_key" translatable="false">AIzaSyB3eqNaxlYC_JUCn4TAzyvv9ymCvj9ryOo</string>
-    <string name="google_app_id" translatable="false">1:602700847056:android:2d7fe754b7e77c6b358bd5</string>
+    <string name="google_app_id" translatable="false">1:602700847056:android:14e7ae641f162d80358bd5</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB3eqNaxlYC_JUCn4TAzyvv9ymCvj9ryOo</string>
     <string name="google_storage_bucket" translatable="false">todosaifapp.appspot.com</string>
     <string name="project_id" translatable="false">todosaifapp</string>

@@ -19,9 +19,9 @@ class _AddTaskState extends State<AddTask> {
   var hintText = 'Enter new task';
   double hintSize = 30;
   var name;
-  var timing = 'morning';
+  var timing = 'any';
   var priority = 'green';
-  int dayIcon = 1;
+  int dayIcon = 0;
   int priorityIcon = 1;
 
   addData(String name, String priority, String timing) {
@@ -108,11 +108,15 @@ class _AddTaskState extends State<AddTask> {
                         onPressed: () {
                           setState(() {
                             if (dayIcon == 3) {
-                              dayIcon = 1;
+                              dayIcon = 0;
                             } else {
                               dayIcon++;
                             }
 
+                            if (dayIcon == 0) {
+                              timing = 'any';
+                              print("timing: $timing");
+                            }
                             if (dayIcon == 1) {
                               timing = 'morning';
                               print("timing: $timing");
@@ -131,6 +135,9 @@ class _AddTaskState extends State<AddTask> {
                         icon: Icon(
                           (() {
                             // your code here
+                            if (dayIcon == 0) {
+                              return Icons.timelapse_rounded;
+                            }
                             if (dayIcon == 1) {
                               return Icons.wb_sunny_outlined;
                             }
@@ -144,6 +151,9 @@ class _AddTaskState extends State<AddTask> {
                         ),
                         label: Text((() {
                           // your code here
+                          if (dayIcon == 0) {
+                            return 'Any';
+                          }
                           if (dayIcon == 1) {
                             return 'Morning';
                           }

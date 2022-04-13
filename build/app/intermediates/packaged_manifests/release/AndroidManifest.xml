@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.todosaif"
+    package="in.codesaif.todosaif"
     android:versionCode="1"
     android:versionName="1.0.0" >
 
@@ -47,7 +47,7 @@
     <application
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:icon="@mipmap/ic_launcher"
-        android:label="todosaif" >
+        android:label="todoSaif" >
         <activity
             android:name="com.example.todosaif.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
@@ -132,7 +132,7 @@
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.example.todosaif.firebaseinitprovider"
+            android:authorities="in.codesaif.todosaif.firebaseinitprovider"
             android:directBootAware="true"
             android:exported="false"
             android:initOrder="100" />

@@ -4,7 +4,7 @@
     "type": "SHRUNK_PROCESSED_RES",
     "kind": "Directory"
   },
-  "applicationId": "com.example.todosaif",
+  "applicationId": "in.codesaif.todosaif",
   "variantName": "processReleaseResources",
   "elements": [
     {

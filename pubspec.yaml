@@ -32,6 +32,12 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^1.0.0
+  flutter_launcher_icons: "^0.9.2"
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/applogo.png"
 
 
 flutter:
@@ -46,6 +52,3 @@ flutter:
          - asset: font/HalenoirText-Regular.otf
            style: italic
   
-  assets:
-    - assets/images/dp.jpg
-   

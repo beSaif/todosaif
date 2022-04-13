@@ -7,6 +7,7 @@ import 'package:todosaif/components/theme.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:loader_overlay/loader_overlay.dart';
 import 'package:todosaif/screens/home/home.dart';
+import 'package:todosaif/screens/login/components/welcome.dart';
 import 'package:todosaif/utils/sizedbox.dart';
 
 class LogIn extends StatefulWidget {
@@ -123,23 +124,9 @@ class _LogInState extends State<LogIn> {
                                                   .get();
 
                                           if (snapshot.size == 0) {
-                                            Map<String, dynamic> demoData = {
-                                              "name": 'Create a task',
-                                              "priority": 'green',
-                                              "timing": 'morning',
-                                              "status": true,
-                                              "createdOn":
-                                                  FieldValue.serverTimestamp()
-                                            };
                                             print("User: $user doesn't exist");
                                             print("Creating $user...");
-                                            CollectionReference
-                                                collectionReference =
-                                                FirebaseFirestore.instance
-                                                    .collection(user);
-                                            collectionReference
-                                                .doc()
-                                                .set(demoData);
+                                            welcome(user);
                                             print("$user created.");
                                           } else {
                                             print("User: $user exists");

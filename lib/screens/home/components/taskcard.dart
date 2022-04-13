@@ -7,6 +7,7 @@ import 'package:todosaif/utils/sizedbox.dart';
 
 Widget taskCards(BuildContext context, doc, user) {
   String name = doc["name"];
+  String timing = doc["timing"];
   String priority = doc["priority"];
   String docID = doc.id;
   Map<String, dynamic> docUndo = {
@@ -73,7 +74,28 @@ Widget taskCards(BuildContext context, doc, user) {
                     fontSize: 18,
                     fontWeight: FontWeight.w500),
               ),
-            )
+            ),
+            GestureDetector(
+                onTap: () {
+                  print(timing);
+                },
+                child: Icon(
+                  (() {
+                    if (timing == 'any') {
+                      return null;
+                    }
+                    if (timing == 'morning') {
+                      return Icons.wb_sunny_outlined;
+                    }
+                    if (timing == 'evening') {
+                      return Icons.cloud_circle_outlined;
+                    }
+                    if (timing == 'night') {
+                      return Icons.mode_night_outlined;
+                    }
+                  }()),
+                  color: colorAccent,
+                ))
           ],
         ),
       ),

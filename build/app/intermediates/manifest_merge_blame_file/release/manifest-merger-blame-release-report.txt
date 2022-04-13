@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.todosaif"
+3    package="in.codesaif.todosaif"
 4    android:versionCode="1"
 5    android:versionName="1.0.0" >
 6
@@ -83,7 +83,7 @@
 48-->[androidx.core:core:1.6.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\14b93615368c2249f1830e26ca064ab5\core-1.6.0\AndroidManifest.xml:24:18-86
 49        android:icon="@mipmap/ic_launcher"
 49-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:27:9-43
-50        android:label="todosaif" >
+50        android:label="todoSaif" >
 50-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:26:9-33
 51        <activity
 51-->C:\Users\Saifu\Desktop\CODING\Flutter\todosaif\android\app\src\main\AndroidManifest.xml:28:9-62:20
@@ -219,7 +219,7 @@
 133-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:26:9-31:39
 134            android:name="com.google.firebase.provider.FirebaseInitProvider"
 134-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:27:13-77
-135            android:authorities="com.example.todosaif.firebaseinitprovider"
+135            android:authorities="in.codesaif.todosaif.firebaseinitprovider"
 135-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:28:13-72
 136            android:directBootAware="true"
 136-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Saifu\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:29:13-43
