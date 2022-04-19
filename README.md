@@ -6,6 +6,4 @@ A simple to to-do app that resets on daily basis
 
 More details will be added here.
 
-```
-![alt text](/assets/screenshots/drawer.webp)
-```
+![alt text](https://raw.githubusercontent.com/beSaif/todosaif/main/assets/screenshots/drawer.webp?raw=true)
