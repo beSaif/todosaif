@@ -21745,10 +21745,10 @@ io.grpc.ClientInterceptors:
     static synthetic io.grpc.ClientCall access$100()
 io.flutter.plugin.common.PluginRegistry
 com.google.common.collect.Synchronized$SynchronizedMultiset
-com.google.firebase.firestore.auth.-$$Lambda$FirebaseAppCheckTokenProvider$hu48mr03bfT6X2LDSOXJket2KbA:
-    public final void onAppCheckTokenChanged(com.google.firebase.appcheck.AppCheckTokenResult)
 com.google.firebase.firestore.auth.-$$Lambda$FirebaseAuthCredentialsProvider$SiEkKBu9hz30n6jbv61jv-eXGhA:
     public final void onIdTokenChanged(com.google.firebase.internal.InternalTokenResult)
+com.google.firebase.firestore.auth.-$$Lambda$FirebaseAppCheckTokenProvider$hu48mr03bfT6X2LDSOXJket2KbA:
+    public final void onAppCheckTokenChanged(com.google.firebase.appcheck.AppCheckTokenResult)
 kotlinx.coroutines.scheduling.ExperimentalCoroutineDispatcher:
     public void close()
     public java.lang.String toString()

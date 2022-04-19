@@ -27,11 +27,11 @@ AppBar appBar(_advancedDrawerController, _handleMenuButtonPressed, context) {
     backgroundColor: Colors.transparent,
     elevation: 0,
     actions: [
-      IconButton(
-          onPressed: () {},
-          icon: const Icon(
-            Icons.search,
-          )),
+      // IconButton(
+      //     onPressed: () {},
+      //     icon: const Icon(
+      //       Icons.search,
+      //     )),
       IconButton(
           onPressed: () async {
             late SharedPreferences preferences;
